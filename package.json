@@ -1,0 +1,46 @@
+{
+  "name": "semantic-release-config-aristek",
+  "version": "1.0.0",
+  "description": "Semantic release config based on conventional config with some additions.",
+  "repository": "https://github.com/aristek/semantic-release-config-aristek",
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "peerDependencies": {
+    "semantic-release": "~17.0.1"
+  },
+  "dependencies": {
+    "@semantic-release/commit-analyzer": "~8.0.0",
+    "@semantic-release/git": "~9.0.0",
+    "@semantic-release/github": "~7.0.4",
+    "@semantic-release/npm": "~7.0.0",
+    "@semantic-release/release-notes-generator": "~9.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "8.3.5",
+    "@commitlint/config-conventional": "8.3.4",
+    "husky": "4.2.1",
+    "lint-staged": "10.0.4",
+    "prettier": "1.19.1",
+    "semantic-release": "17.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.js": "prettier --write"
+  },
+  "release": {
+    "extends": "."
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}
