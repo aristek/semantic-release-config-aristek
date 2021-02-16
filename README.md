@@ -20,13 +20,13 @@ It uses our own preset based on [conventional commits](https://www.conventionalc
 To add package to project's dependencies via npm run:
 
 ```bash
-npm i -E -D semantic-release-config-aristek semantic-release@17.0.x
+npm i -E -D semantic-release semantic-release-config-aristek
 ```
 
 Or via yarn:
 
 ```bash
-yarn add -E -D semantic-release-config-aristek semantic-release@17.0.4
+yarn add -E -D semantic-release semantic-release-config-aristek
 ```
 
 ## Usage
