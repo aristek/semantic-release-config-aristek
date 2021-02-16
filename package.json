@@ -1,6 +1,6 @@
 {
   "name": "semantic-release-config-aristek",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Semantic release config based on conventional config with some additions.",
   "repository": "https://github.com/aristek/semantic-release-config-aristek",
   "license": "MIT",
